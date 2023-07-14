@@ -22,10 +22,10 @@ const MyModels =mongoose.model("collectionsName",mySchema);
 
 
 app.get("/",(req,res)=>{
-    res.send("Hello world");
+    res.render("index");
 })
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>{
-    console.log("Server is running in port " + PORT);
+    console.log("Server is running in http://localhost:" + PORT);
 })
